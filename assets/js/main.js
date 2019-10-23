@@ -71,6 +71,8 @@ if (typeof show_search == 'undefined') {
 if (!show_search) {
   $("#search-btn").hide();
 }
+
+if (show_search) {
 // click search button event
 $("#search-btn").click(function(event) {
     // $("#search-input").val("");
@@ -107,6 +109,7 @@ $(window).scroll(function(){
   $("#search-results").hide(); 
   $("#search-btn").show();
 });
+}
 
 /*----------------------------------------------------*/
 /*  Hide / Show Credit Button | 2019.06.25
